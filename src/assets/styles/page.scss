@@ -14,7 +14,13 @@
         bottom: 0;
         background: $white;
         & a {
+            color: #000000;
             display: block;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             transform: rotate(-90deg);
             transform-origin: 40% 20%;
         }
@@ -39,8 +45,15 @@
         background: $white;
         & a {
             display: block;
+            color: #000000;
+            display: block;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             transform: rotate(90deg);
-            transform-origin: 40% -25%;
+            transform-origin: 35% -25%;
         }
     }
     &__decorator {
