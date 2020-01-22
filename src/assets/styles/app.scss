@@ -11,13 +11,15 @@
 // Теги по умолчанию
 @import "./global-tags";
 // Корневая обертка
-@import "./page.scss";
+@import "./page";
 // Шапка
 @import "../../blocks/header/main_header";
 // Логотип
 @import "../../components/logo/logo";
 // Кнопки
-@import "../../components/btn/btn.scss";
+@import "../../components/btn/btn";
+// Промо
+@import "../../blocks/promo/promo";
 // Формы
 // Сайтбар
 // Навигация - Выпадающее меню

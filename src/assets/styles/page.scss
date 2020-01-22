@@ -43,6 +43,11 @@
             transform-origin: 40% -25%;
         }
     }
+    &__decorator {
+        background: url('../../img/bg-img.png') $colorBackground;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .container {

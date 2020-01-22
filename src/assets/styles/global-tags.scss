@@ -55,3 +55,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.title {
+    color: $white;
+    display: block;
+    font-family: Gotham Pro;
+    font-size: 4.0rem;
+    line-height: 6.0rem;
+    text-transform: uppercase;
+}
