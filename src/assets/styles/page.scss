@@ -1,0 +1,51 @@
+.page {
+    &-header {
+        padding: 15px 0;
+        background: $white;
+    }
+    &__left {
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: $white;
+        & a {
+            display: block;
+            transform: rotate(-90deg);
+            transform-origin: 40% 20%;
+        }
+    }
+    &__main {
+        color: #fff;
+        height: 100vh;
+        background: $colorBackground;
+        margin: 0 60px;
+        padding-top: 45px;
+        overflow: scroll;
+    }
+    &__right {
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: $white;
+        & a {
+            display: block;
+            transform: rotate(90deg);
+            transform-origin: 40% -25%;
+        }
+    }
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
