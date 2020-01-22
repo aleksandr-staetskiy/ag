@@ -1,0 +1,53 @@
+.tab {
+    &__switch {
+        display: flex;
+        border-bottom: 1px solid rgba(156, 74, 74, 0.2);
+        padding: 10px 0;
+    }
+    &__link {
+        color: $white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        margin-right: 38px;
+        transition: .2s ease-in;
+        &:hover {
+            color: $colorPrimery;
+        }
+        &--active {
+            color: $colorPrimery;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+        margin-top: 40px;
+        border-bottom: 1px solid rgba(156, 74, 74, 0.2);
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.5rem;
+    }
+    &__divider {
+        width: 1px;
+        height: 19px;
+        background: $white;
+    }
+    &__downloader {
+        width: 24px;
+        height: 24px;
+        background: url('../../img/download.png')no-repeat;
+        background-size: cover;
+    }
+}

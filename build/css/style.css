@@ -484,4 +484,78 @@ img {
   margin-top: 60px;
 }
 
+.tab__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(156, 74, 74, 0.2);
+  padding: 10px 0;
+}
+
+.tab__link {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-right: 38px;
+  -webkit-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.tab__link:hover {
+  color: #C78555;
+}
+
+.tab__link--active {
+  color: #C78555;
+}
+
+.tab__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-bottom: 1px solid rgba(156, 74, 74, 0.2);
+}
+
+.tab__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.tab__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+.tab__divider {
+  width: 1px;
+  height: 19px;
+  background: #ffffff;
+}
+
+.tab__downloader {
+  width: 24px;
+  height: 24px;
+  background: url("../../img/download.png") no-repeat;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=app.css.map */
