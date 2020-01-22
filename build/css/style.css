@@ -222,8 +222,6 @@ body {
 }
 
 h1 {
-  margin-bottom: 32px;
-  line-height: 40px;
   font-size: 2.8rem;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.9);
@@ -343,8 +341,9 @@ img {
 
 .page__decorator {
   background: url("../../img/bg-img.png") #2f2e2e;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .container {
@@ -399,6 +398,73 @@ img {
 
 .promo__title {
   padding-top: 157px;
+}
+
+.catalogue__title {
+  margin-top: 90px;
+}
+
+.catalogue__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalogue__card {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 270px;
+  height: 335px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: url("../../img/card-img.jpg") no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.catalogue__card-title {
+  color: #ffffff;
+  font-family: 'Gotham Pro Bold';
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 0;
+}
+
+.catalogue__card__descr {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.catalogue__card-box {
+  display: none;
+  -webkit-transform: translateY(245px);
+      -ms-transform: translateY(245px);
+          transform: translateY(245px);
+}
+
+.catalogue__card:hover .catalogue__card-box {
+  display: block;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.catalogue__card:hover {
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(30, 30, 30, 0.4)), to(rgba(30, 30, 30, 0.4))), url("../../img/card-img.jpg") no-repeat;
+  background: -o-linear-gradient(bottom, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url("../../img/card-img.jpg") no-repeat;
+  background: linear-gradient(0deg, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url("../../img/card-img.jpg") no-repeat;
 }
 
 /*# sourceMappingURL=app.css.map */

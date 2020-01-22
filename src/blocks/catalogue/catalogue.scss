@@ -1,0 +1,46 @@
+.catalogue {
+    &__title {
+        margin-top: 90px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-end;
+        width: 270px;
+        height: 335px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background: url('../../img/card-img.jpg')no-repeat;
+        border-radius: 10px;
+        overflow: hidden;
+        &-title {
+            color: $white;
+            font-family: 'Gotham Pro Bold';
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            margin-bottom: 0;
+        }
+        &__descr {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+        }
+        &-box {
+            display: none;
+            transform: translateY(245px);
+        }
+        &:hover .catalogue__card-box {
+            display: block;
+            transform: translateY(0);
+        }
+        &:hover {
+            display: block;
+            background: linear-gradient(0deg, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url('../../img/card-img.jpg')no-repeat;
+        }
+    }
+}

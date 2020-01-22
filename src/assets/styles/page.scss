@@ -45,8 +45,9 @@
     }
     &__decorator {
         background: url('../../img/bg-img.png') $colorBackground;
+        background-position: top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
     }
 }
 
