@@ -566,4 +566,13 @@ img {
   background-size: cover;
 }
 
+.page-footer {
+  margin-top: 100px;
+}
+
+.page-footer__info {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 /*# sourceMappingURL=app.css.map */
