@@ -1,4 +1,6 @@
-import Vue from "vue"
+import Vue from "vue";
+import IMask from 'imask';
+
 
 Vue.component('tabs', {
     template: `
@@ -65,3 +67,64 @@ Vue.component('tab', {
 new Vue({
     el: '#tabs',
 })
+
+
+
+// mask checker
+
+const input = document.querySelector('.form__input');
+const mask = IMask(input, {
+    mask: '+{7}(000)000-00-00'
+});
+
+
+const form = document.querySelector('.form')
+
+form.addEventListener('submit', event => {
+    event.preventDefault();
+    let input = document.querySelector('.form__input').value;
+    let checkbox = document.querySelector('.check');
+
+    let inputIsCorrect = false;
+    let checkCorrect = false;
+
+    if (input === '') {
+        alert('Поле пустое')
+        return;
+    }
+
+    if (!checkbox.checked) {
+        alert('Примите соглашение')
+    } else {
+        checkCorrect = true
+    }
+
+    if (input.length < 7) {
+        alert('мало символов')
+        return;
+    } else {
+        inputIsCorrect = true;
+    }
+
+    if (inputIsCorrect === true && checkCorrect === true) {
+
+        let formData = new FormData(this);
+        formData = Object.fromEntries(formData);
+
+        ajaxSend(formData);
+        this.reset();
+
+    }
+})
+
+const ajaxSend = (formData) => {
+    fetch('http://localhost:8081/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // отправляемые данные 
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => alert('Сообщение отправлено'))
+        .catch(error => console.error(error))
+};
