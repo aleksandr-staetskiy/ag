@@ -12,4 +12,9 @@
     line-height: 1.6rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    @media (max-width: 780px) {
+        & {
+            padding: 15px 35px;
+        }
+    }
 }

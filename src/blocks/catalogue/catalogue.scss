@@ -43,4 +43,9 @@
             background: linear-gradient(0deg, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url('../../img/card-img.jpg')no-repeat;
         }
     }
+    @media (max-width: 1000px) {
+        &__list {
+            justify-content: space-around;
+        }
+    }
 }

@@ -269,6 +269,13 @@ img {
   text-transform: uppercase;
 }
 
+@media (max-width: 780px) {
+  .title {
+    font-size: 2.6rem;
+    line-height: 4.0rem;
+  }
+}
+
 .page-header {
   padding: 15px 0;
   background: #ffffff;
@@ -308,6 +315,12 @@ img {
           transform-origin: 40% 20%;
 }
 
+@media (max-width: 780px) {
+  .page__left {
+    display: none;
+  }
+}
+
 .page__main {
   color: #fff;
   height: 100vh;
@@ -315,6 +328,12 @@ img {
   margin: 0 60px;
   padding-top: 45px;
   overflow: scroll;
+}
+
+@media (max-width: 780px) {
+  .page__main {
+    margin: 0 30px;
+  }
 }
 
 .page__right {
@@ -352,6 +371,12 @@ img {
           transform-origin: 35% -25%;
 }
 
+@media (max-width: 780px) {
+  .page__right {
+    display: none;
+  }
+}
+
 .page__decorator {
   background: url("../../img/bg-img.png") #2f2e2e;
   background-position: top;
@@ -362,6 +387,12 @@ img {
 .container {
   max-width: 850px;
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0px 15px;
+  }
 }
 
 .file {
@@ -388,6 +419,7 @@ img {
   top: 0;
   right: 0;
   padding: 15px 60px;
+  z-index: 6;
 }
 
 .page-header__btn {
@@ -395,10 +427,29 @@ img {
   right: 61px;
 }
 
+@media (max-width: 780px) {
+  .page-header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 15px 30px;
+  }
+  .page-header__btn {
+    right: 15px;
+  }
+}
+
 .logo {
   display: block;
   width: 268px;
   height: 46px;
+}
+
+@media (max-width: 780px) {
+  .logo {
+    width: 168px;
+    height: 38px;
+  }
 }
 
 .btn {
@@ -415,6 +466,12 @@ img {
   line-height: 1.6rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+@media (max-width: 780px) {
+  .btn {
+    padding: 15px 35px;
+  }
 }
 
 .promo__title {
@@ -486,6 +543,13 @@ img {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(30, 30, 30, 0.4)), to(rgba(30, 30, 30, 0.4))), url("../../img/card-img.jpg") no-repeat;
   background: -o-linear-gradient(bottom, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url("../../img/card-img.jpg") no-repeat;
   background: linear-gradient(0deg, rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)), url("../../img/card-img.jpg") no-repeat;
+}
+
+@media (max-width: 1000px) {
+  .catalogue__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .location__map {

@@ -2,4 +2,10 @@
     display: block;
     width: 268px;
     height: 46px;
+    @media (max-width: 780px) {
+        & {
+            width: 168px;
+            height: 38px;
+        }
+    }
 }

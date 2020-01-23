@@ -24,6 +24,11 @@
             transform: rotate(-90deg);
             transform-origin: 40% 20%;
         }
+        @media (max-width: 780px) {
+            & {
+                display: none;
+            }
+        }
     }
     &__main {
         color: #fff;
@@ -32,6 +37,11 @@
         margin: 0 60px;
         padding-top: 45px;
         overflow: scroll;
+        @media (max-width: 780px) {
+            & {
+                margin: 0 30px;
+            }
+        }
     }
     &__right {
         width: 60px;
@@ -55,6 +65,11 @@
             transform: rotate(90deg);
             transform-origin: 35% -25%;
         }
+        @media (max-width: 780px) {
+            & {
+                display: none;
+            }
+        }
     }
     &__decorator {
         background: url('../../img/bg-img.png') $colorBackground;
@@ -67,6 +82,11 @@
 .container {
     max-width: 850px;
     margin: 0 auto;
+    @media (max-width: 1000px) {
+        & {
+            padding: 0px 15px;
+        }
+    }
 }
 
 .file {

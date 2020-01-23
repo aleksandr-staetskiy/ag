@@ -8,8 +8,18 @@
     top: 0;
     right: 0;
     padding: 15px 60px;
+    z-index: 6;
     &__btn {
         position: absolute;
         right: 61px;
+    }
+    @media (max-width: 780px) {
+        & {
+            justify-content: flex-start;
+            padding: 15px 30px;
+            &__btn {
+                right: 15px;
+            }
+        }
     }
 }

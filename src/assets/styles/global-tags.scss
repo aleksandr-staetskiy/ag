@@ -61,4 +61,10 @@ img {
     font-size: 4.0rem;
     line-height: 6.0rem;
     text-transform: uppercase;
+    @media (max-width: 780px) {
+        & {
+            font-size: 2.6rem;
+            line-height: 4.0rem;
+        }
+    }
 }
