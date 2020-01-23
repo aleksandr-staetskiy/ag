@@ -364,6 +364,14 @@ img {
   margin: 0 auto;
 }
 
+.file {
+  height: 450px;
+}
+
+.file__title {
+  margin-top: 60px;
+}
+
 .page-header {
   position: relative;
   display: -webkit-box;

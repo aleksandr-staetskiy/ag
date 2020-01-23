@@ -51,5 +51,8 @@
         "prettier": "^1.18.0",
         "webpack": "^4.33.0",
         "webpack-stream": "^5.2.1"
+    },
+    "dependencies": {
+        "vue": "^2.6.11"
     }
 }

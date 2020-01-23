@@ -68,3 +68,10 @@
     max-width: 850px;
     margin: 0 auto;
 }
+
+.file {
+    height: 450px;
+    &__title {
+        margin-top: 60px;
+    }
+}
